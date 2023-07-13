@@ -6,14 +6,15 @@ import { AxiosResponse } from 'axios';
 // define the port and server address
 const PORT = 3000;
 
-// // Docker configuration
-// const RECEIVER_SERVER = 'http://receiver:3001';
-// const HOST = '0.0.0.0';
+// Docker configuration
+const RECEIVER_SERVER = 'http://receiver:3001';
+const HOST = '0.0.0.0';
 
-
+/*
 // Nodejs local configuration
 const RECEIVER_SERVER = 'http://localhost:3001';
-const HOST = 'localhost'; 
+const HOST = 'localhost';
+*/
 
 // create a Fastify server
 const server = fastify();
