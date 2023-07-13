@@ -1,0 +1,22 @@
+{
+  "name": "receiver_server",
+  "version": "1.0.0",
+  "description": "Receiver on Docker",
+  "main": "dist/receiver.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node receiver.ts",
+    "start": "node dist/receiver.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "fastify": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}

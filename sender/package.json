@@ -1,0 +1,22 @@
+{
+  "name": "sender_server",
+  "version": "1.0.0",
+  "description": "Sender on Docker",
+  "main": "dist/sender.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node sender.ts",
+    "start": "node dist/sender.js",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "fastify": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1"
+  }
+}
