@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  sender:
+    container_name: sender
+    build:
+      context: ./sender
+    ports:
+      - '3000:3000'
+    networks:
+      - ping-pong-net
+  receiver:
+    container_name: receiver 
+    depends_on: 
+      - sender
+    build:
+      context: ./receiver
+    ports:
+      - '3001:3001'
+    networks:
+      - ping-pong-net
+networks:
+  ping-pong-net:
+    driver: bridge
+    ipam:
+      driver: default
